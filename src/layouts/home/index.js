@@ -1,19 +1,36 @@
 import React from "react";
 
-// /** Import MUI components */
+/** Import MUI components */
 import { Box } from "@mui/system";
-// import { makeStyles } from "@mui/styles";
-// import { useTheme } from "@emotion/react";
-// import { Typography } from "@mui/material";
-
-/** Material UI Styles */
-// const useStyles = makeStyles((theme) => ({}));
 
 export default function Home(props) {
-  //   const classes = useStyles();
   return (
-    <Box sx={{ marginTop: "5rem" }}>
-      <h1>Home Page</h1>
+    <Box
+      component={"div"}
+      sx={{
+        marginTop: "5rem",
+        direction: "row",
+        width: "100%",
+      }}
+    >
+      <Box sx={{ display: "flex", flexDirection: "row" }}>
+        <Box sx={{ backgroundColor: "green", m: "0.5rem", width: "100%" }}>
+          <h1>Journal Div</h1>
+        </Box>
+      </Box>
+      <Box sx={{ width: "100%", display: "flex", flexDirection: "row" }}>
+        <Box sx={{ backgroundColor: "green", width: "50%", m: "0.5rem" }}>
+          <h1>Current Journal</h1>
+        </Box>
+        <Box sx={{ backgroundColor: "green", width: "50%", m: "0.5rem" }}>
+          <h1>Location Summary</h1>
+        </Box>
+      </Box>
+      <Box sx={{ display: "flex", flexDirection: "row" }}>
+        <Box sx={{ backgroundColor: "green", m: "0.5rem", width: "100%" }}>
+          <h1>Add Journal Entry</h1>
+        </Box>
+      </Box>
     </Box>
   );
 }

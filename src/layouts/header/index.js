@@ -2,7 +2,6 @@
 import React from "react";
 
 /** Import Material UI Components */
-import { Grid } from "@mui/material";
 import Box from "@mui/material/Box";
 
 /** Import Custom Components */

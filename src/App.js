@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 /** Import Material UI components */
 import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
@@ -13,6 +13,7 @@ import Calander from "./layouts/calander";
 import Cost from "./layouts/cost";
 import Enviroment from "./layouts/enviroment";
 import Gallery from "./layouts/gallery";
+import Settings from "./layouts/settings/settings";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route exact path="/cost" element={<Cost />} />
           <Route exact path="/enviroment" element={<Enviroment />} />
           <Route exact path="/gallery" element={<Gallery />} />
+          <Route exact path="/settings" element={<Settings />} />
         </Routes>
       </ThemeProvider>
     </Box>

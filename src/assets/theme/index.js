@@ -1,5 +1,4 @@
 import { createTheme } from "@mui/material/styles";
-import { green, blue } from "@mui/material/colors";
 
 const col1 = "#062C30";
 const col2 = "#05595B";
@@ -18,7 +17,7 @@ const theme = createTheme({
       main: col2,
     },
     secondary: {
-      main: col1,
+      main: col4,
     },
     tertiary: {
       main: col3,
