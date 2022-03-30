@@ -3,6 +3,47 @@ import React from "react";
 /** Import MUI components */
 import { Box } from "@mui/system";
 
+const boxBodyCalander = {
+  width: "100%",
+  display: "grid",
+  flexDirection: "row",
+  justifyContent: "space-evenly",
+  gridTemplateColumns: "repeat(7, 1fr)",
+};
+
+const boxBodyWeekdays = {
+  width: "100%",
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "space-evenly",
+};
+
+const boxBodyEntry = {
+  display: "flex",
+  flexDirection: "column",
+  width: "15%",
+};
+
+const boxBodyMain = {
+  width: "85%",
+  display: "flex",
+  flexDirection: "column",
+};
+
+const boxBodyContainer = {
+  width: "100%",
+  display: "flex",
+  flexDirection: "column",
+};
+
+const boxMain = {
+  marginTop: "5rem",
+  direction: "row",
+  width: "100%",
+  display: "flex",
+  flexDirection: "row",
+};
+
 export default function Calander(props) {
   const tempCal = [
     "1",
@@ -48,54 +89,20 @@ export default function Calander(props) {
     "Entry 7",
   ];
   return (
-    <Box
-      component={"div"}
-      sx={{
-        marginTop: "5rem",
-        direction: "row",
-        width: "100%",
-        display: "flex",
-        flexDirection: "row",
-      }}
-    >
-      <Box
-        component={"div"}
-        sx={{ display: "flex", flexDirection: "column", width: "15%" }}
-      >
+    <Box component={"div"} sx={boxMain}>
+      <Box component={"div"} sx={boxBodyEntry}>
         {calEntries.map((data) => (
-          <Box sx={{ width: "100%", backgroundColor: "" }}>
+          <Box sx={{ width: "100%" }}>
             <h1>{data}</h1>
           </Box>
         ))}
       </Box>
 
-      <Box
-        component={"div"}
-        sx={{
-          width: "85%",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <Box
-          component={"div"}
-          sx={{
-            width: "100%",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
+      <Box component={"div"} sx={boxBodyMain}>
+        <Box component={"div"} sx={boxBodyContainer}>
           <h1>Month Details</h1>
         </Box>
-        <Box
-          component={"div"}
-          sx={{
-            width: "100%",
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "space-evenly",
-          }}
-        >
+        <Box component={"div"} sx={boxBodyWeekdays}>
           <h2>Sunday</h2>
           <h2>Monday</h2>
           <h2>Tuesday</h2>
@@ -104,18 +111,9 @@ export default function Calander(props) {
           <h2>Friday</h2>
           <h2>Saterday</h2>
         </Box>
-        <Box
-          component={"div"}
-          sx={{
-            width: "100%",
-            display: "grid",
-            flexDirection: "row",
-            // justifyContent: "space-evenly",
-            gridTemplateColumns: "repeat(7, 1fr)",
-          }}
-        >
+        <Box component={"div"} sx={boxBodyCalander}>
           {tempCal.map((data) => (
-            <Box sx={{ width: "100%", backgroundColor: "" }}>
+            <Box sx={{ width: "100%" }}>
               <h1>{data}</h1>
             </Box>
           ))}

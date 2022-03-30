@@ -26,6 +26,19 @@ function ElevationScroll(props) {
   });
 }
 
+const buttonBoxContainer = {
+  width: "15%",
+  flexDirection: "row",
+  display: "flex",
+  justifyContent: "space-around",
+};
+
+const buttonBox = {
+  display: "flex",
+  width: "50%",
+  justifyContent: "space-around",
+};
+
 export default function CustAppBar() {
   const [value, setValue] = useState(0);
 
@@ -54,21 +67,8 @@ export default function CustAppBar() {
               <Box sx={{ width: "65%" }}>
                 <CustTabs value={value} handleChange={handleChange} />
               </Box>
-              <Box
-                sx={{
-                  width: "15%",
-                  flexDirection: "row",
-                  display: "flex",
-                  justifyContent: "space-around",
-                }}
-              >
-                <Box
-                  sx={{
-                    display: "flex",
-                    width: "50%",
-                    justifyContent: "space-around",
-                  }}
-                >
+              <Box sx={buttonBoxContainer}>
+                <Box sx={buttonBox}>
                   <CustButton
                     butName={"Login"}
                     butValue={"Login"}
@@ -78,13 +78,7 @@ export default function CustAppBar() {
                     backgroundColor={"primary"}
                   />
                 </Box>
-                <Box
-                  sx={{
-                    display: "flex",
-                    width: "50%",
-                    justifyContent: "space-around",
-                  }}
-                >
+                <Box sx={buttonBox}>
                   <CustButton
                     butName={"Register"}
                     butValue={"Register"}
