@@ -1,16 +1,9 @@
 import React from "react";
 
-// /** Import MUI components */
+/** Import MUI components */
 import { Box } from "@mui/system";
-// import { makeStyles } from "@mui/styles";
-// import { useTheme } from "@emotion/react";
-// import { Typography } from "@mui/material";
-
-/** Material UI Styles */
-// const useStyles = makeStyles((theme) => ({}));
 
 export default function Enviroment(props) {
-  //   const classes = useStyles();
   return (
     <Box
       component={"div"}

@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 /** Import Material UI components */
-import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import { Box } from "@mui/material";
 import theme from "../src/assets/theme/index";
 

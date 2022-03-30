@@ -41,7 +41,7 @@ export default function CustAppBar() {
             <Box display={"flex"} sx={{ width: "100%" }}>
               <Box sx={{ width: "20%" }}>
                 <CustTypog
-                  text={"king green"}
+                  text={"Test Logo"}
                   colorFont={"secondary"}
                   weight={"600"}
                   fontFamily={"Commissioner"}
@@ -50,14 +50,6 @@ export default function CustAppBar() {
                   flexGrow={1}
                   pl={"2rem"}
                 />
-
-                {/* <Typography
-                  variant="h4"
-                  component="div"
-                  sx={{ flexGrow: 1, pl: "2rem" }}
-                >
-                  king green
-                </Typography> */}
               </Box>
               <Box sx={{ width: "65%" }}>
                 <CustTabs value={value} handleChange={handleChange} />

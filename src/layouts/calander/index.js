@@ -1,17 +1,9 @@
 import React from "react";
 
-// /** Import MUI components */
+/** Import MUI components */
 import { Box } from "@mui/system";
-// import { makeStyles } from "@mui/styles";
-// import { useTheme } from "@emotion/react";
-// import { Typography } from "@mui/material";
-
-/** Material UI Styles */
-// const useStyles = makeStyles((theme) => ({}));
 
 export default function Calander(props) {
-  //   const classes = useStyles();
-
   const tempCal = [
     "1",
     2,
@@ -46,7 +38,15 @@ export default function Calander(props) {
     31,
   ];
 
-  const calEntries = ["Entry 1", "Entry 2", "Entry 3", "Entry 4", "Entry 5", "Entry 6", "Entry 7"];
+  const calEntries = [
+    "Entry 1",
+    "Entry 2",
+    "Entry 3",
+    "Entry 4",
+    "Entry 5",
+    "Entry 6",
+    "Entry 7",
+  ];
   return (
     <Box
       component={"div"}
